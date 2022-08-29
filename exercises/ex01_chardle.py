@@ -1,7 +1,6 @@
-"""EX01 - Chardle - A cute step toward Wordle"""
+"""EX01 - Chardle - A cute step toward Wordle."""
 __author__ = "730604615"
 
-#Initialization + input + testing if it meets variable requirements
 word_input: str = input("Enter a 5-character word: ")
 if len(word_input) != 5:
     print("Error: Word must contain 5 characters")
@@ -15,7 +14,6 @@ counter = 0
 
 print("Searching for " + letter_input + " in " + word_input)
 
-#Searching if letter is in word
 if letter_input == word_input[0]:
     print(letter_input, "found at index 0")
     counter += 1
@@ -34,5 +32,7 @@ if letter_input == word_input[4]:
 
 if counter == 0:
     print("No instances of", letter_input, "found in", word_input)
+elif counter == 1:
+    print("1 instance of", letter_input, "found in", word_input)
 else:
     print(counter, "instances found of", letter_input, "found in", word_input)
