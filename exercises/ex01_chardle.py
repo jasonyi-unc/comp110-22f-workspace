@@ -35,4 +35,4 @@ if counter == 0:
 elif counter == 1:
     print("1 instance of", letter_input, "found in", word_input)
 else:
-    print(counter, "instances found of", letter_input, "found in", word_input)
+    print(counter, "instances of", letter_input, "found in", word_input)
