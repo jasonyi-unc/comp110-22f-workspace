@@ -9,7 +9,7 @@ counter = 0
 if len(word_input) != 5:
     print("Error: Word must contain 5 characters")
     exit()
-if len(letter_input) > 1:
+if len(letter_input) != 1:
     print("Error: Character must be a single character")
     exit()
 
