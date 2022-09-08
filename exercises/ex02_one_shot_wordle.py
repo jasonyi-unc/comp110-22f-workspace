@@ -15,28 +15,28 @@ alt_counter = 0
 
 
 while len(input_guess) != 6:
-  input_guess = input("This was not 6 letters ! Try again: ")
+    input_guess = input("This was not 6 letters ! Try again: ")
 
 
 while counter < len(secret_word):
-  if input_guess[counter] == secret_word[counter]:
-    box_emoji += GREEN_BOX      
-  else:
-    while yellow_guess == False and alt_counter < len(secret_word):
-        if input_guess[counter] == secret_word[alt_counter]:
-            yellow_guess = True
-        else:
-            alt_counter += 1
-    if yellow_guess:
-        box_emoji += YELLOW_BOX
+    if input_guess[counter] == secret_word[counter]:
+        box_emoji += GREEN_BOX      
     else:
-        box_emoji += WHITE_BOX
-  counter += 1
-  alt_counter = 0
-  yellow_guess = False
+        while yellow_guess == False and alt_counter < len(secret_word):
+            if input_guess[counter] == secret_word[alt_counter]:
+                yellow_guess = True
+            else:
+                alt_counter += 1
+        if yellow_guess:
+            box_emoji += YELLOW_BOX
+        else:
+            box_emoji += WHITE_BOX
+    counter += 1
+    alt_counter = 0
+    yellow_guess = False
 print(box_emoji)
   
 if input_guess == secret_word:
-  print("Woo! You got it!")
+    print("Woo! You got it!")
 else:
-  print("Not quite. Play again soon!")
+    print("Not quite. Play again soon!")
