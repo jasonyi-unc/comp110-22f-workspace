@@ -20,9 +20,9 @@ while len(input_guess) != 6:
 
 while counter < len(secret_word):
     if input_guess[counter] == secret_word[counter]:
-        box_emoji += GREEN_BOX      
+        box_emoji += GREEN_BOX
     else:
-        while yellow_guess == False and alt_counter < len(secret_word):
+        while not yellow_guess and alt_counter < len(secret_word):
             if input_guess[counter] == secret_word[alt_counter]:
                 yellow_guess = True
             else:
