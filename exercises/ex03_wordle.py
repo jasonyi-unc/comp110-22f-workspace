@@ -53,7 +53,7 @@ def main() -> None:
         print(f"=== Turn {n}/6 ===")
         guess = input_guess(len(codes))
         print(emojified(guess, codes))
-        if guess == codes:
+        if guess == codes: 
             print(f"You won in {n}/6 turns!")
             return
         else:
