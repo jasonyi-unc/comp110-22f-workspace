@@ -1,7 +1,7 @@
 """Tests for the sum function."""
 
 
-from lessons.LS16_sum import LS16_sum
+from lessons.LS16_sum import sum
 
 
 def test_sum_empty() -> None:
