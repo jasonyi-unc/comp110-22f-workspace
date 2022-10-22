@@ -33,10 +33,9 @@ def column_values(table: list[dict[str, str]], column: str) -> list[str]:
 
 def columnar(row_table: list[dict[str, str]]) -> dict[str, list[str]]:
     """Transform a row-oriented table to a column-oriented table."""
-    result = dict[str, list[str]] = {}
+    result: dict[str, list[str]] = {}
 
     first_row: dict[str, str] = row_table[0]
     for column in first_row:
         result[column] = column_values(row_table, column)
-
     return result
